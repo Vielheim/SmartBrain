@@ -1,3 +1,7 @@
+# Summary
+This project is part of the Udemy Zero to Mastery Course.  
+It uses Clarifai, a Machine Learning API to detect faces in images.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
