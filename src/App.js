@@ -79,7 +79,7 @@ class App extends Component {
   onImageSubmit = () => {
     this.setState({imageUrl: this.state.input});
     
-    fetch('http://localhost:3000/imageUrl', {
+    fetch('https://morning-shore-88929.herokuapp.com/imageUrl', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({input: this.state.input})
@@ -87,7 +87,7 @@ class App extends Component {
     .then(response => {
         if (response) {
           // notify server to update the entries count
-          fetch('http://localhost:3000/image', {
+          fetch('https://morning-shore-88929.herokuapp.com/image', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({id: this.state.user.id})
