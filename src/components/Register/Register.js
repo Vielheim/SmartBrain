@@ -34,8 +34,8 @@ class Register extends React.Component {
             })
         }).then(response => response.json())
         .then(user => { // we get back a user profile from the server
-            if (user) {
-                // good to update user data inside App.js
+            if (user.id) {
+                // good to update user data inside App.js  
                 this.props.loadUser(user); //something used inside all pages, so App.js handle
                 this.props.onRouteChange('Home');
             }
